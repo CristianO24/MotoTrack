@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">	
-    <title>Login</title>    
+    <link rel="stylesheet" href="CrearUsuario.css">	
+    <title>Registrar usuario</title>    
 </head>
 <body>
-    <div class="caja1">
-        <form method="post" action="login.php">
-        <div class="formtlo">Registrar usuario</div>
-        <div class="ub1">&#128273; Ingresar usuario</div>
-        <input type="text" name="txtusuario">
-        <div class="ub1">&#128274; Ingresar password</div>
-        <input type="password"txtusuario">
-        <div class="ub1"> Rol</div>
-        <input type="text" name="txtpassword" id="txtpassword">
-        
-        <div class="ub1">
-        <input type="checkbox" onclick="verpassword()" >Mostrar contraseña
-         </div>
-                
-        
-        <div align="center">
-            <input type="submit" value="Crear usuario">
-        
-            <input type="reset" value="Borrar">
-        </div>
-        </form>
-        </div>
-        </body>
+    <main class="main">
+        <aside class="sidebar">
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#">Welcome</a></li>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">Get In Touch</a></li>
+            </ul>
+          </nav>
+        </aside>
+    
+        <section class="caja1">
+            <form method="post" action="CrearUsuario.php">
+                <div class="formtlo">Registrar usuario</div>
+                <div class="ub1">&#128273; Ingresar usuario</div>
+                <input type="text" name="txtusuario">
+                <div class="ub1">&#128274; Ingresar password</div>
+                <input type="password" name="txtpassword" id="txtpassword">
+                <div class="ub1"> Rol</div>
+                <input type="text" name="txtrol">        
+                <div class="ub1">
+                <input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+                </div>
+                <div align="center">
+                    <input type="submit" value="Crear usuario">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
         <script>
+    
           function verpassword(){
               var tipo = document.getElementById("txtpassword");
               if(tipo.type == "password")

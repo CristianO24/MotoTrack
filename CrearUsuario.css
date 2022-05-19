@@ -1,0 +1,185 @@
+@charset "UTF-8";
+.flex, .footer, .login__container--social-media > div, .login, .header {
+  display: flex;
+  align-items: center;
+}
+
+*
+{
+	font-family: "Josefin Sans", sans-serif;
+	text-align:center;
+}
+body
+{
+	position: inherit;
+	background: white;
+}
+
+.main{
+	display: flex;
+	flex-direction: row;
+}
+
+.ub1
+{
+text-align:left;
+font-weight: bold;
+margin-bottom:0.5em;
+margin-top:0.5em;
+}
+.caja1
+{
+	background:white;
+	width:20em;
+    height: auto;
+    margin: auto;
+    padding: 2em;
+	border-radius: 1em;
+	color:black;
+	margin-top: 200px;
+	display: inline;
+
+}
+input, select
+{
+	width: 100%;
+    padding: 0.5em;
+	font-size:1em;
+	border-radius:5px;
+	border:1px solid black;
+	color:black;
+	text-align:left;
+	
+}
+input[type=submit],input[type=reset]
+{
+margin-top: 1.5em;
+width:48%;
+text-align:center;
+
+}
+input[type=checkbox]
+{
+margin-left:0;
+width:10%;
+
+}
+
+table
+{
+	width:50em;
+	margin:0;
+	border-collapse:collapse;
+	border: 0.1em solid black;
+	background: #2CA0DF;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+td
+{
+	padding:1em 2em;
+	border: 0.1em solid black;
+	text-align: center;
+	background: #f3f3f3;
+	font-weight: bold;
+}
+
+th
+{
+	padding:1em;
+	border: 0.1em solid black;
+	background-color: #70C1F7;
+}
+a
+{
+	font-size: 1em;
+	text-align:center;
+	Display: inline-block;
+	background-color:#f8872a;
+	padding: 0.5em 0.5em;
+	border-radius:0.3em;
+	text-decoration: none;
+	color:white;
+	border:0.1em solid black;
+	cursor:pointer;
+}
+
+
+.formtlo
+{
+	font-size:2em;
+	font-weight: bold;
+	padding-bottom:0.8em;
+	color:black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+img{
+	width: 50px;
+	height: 50px;
+}
+
+.sidebar {
+	position: fixed;
+	width: 25%;
+	height: 100vh;
+	background: whitesmoke;
+	font-size: 0.65em;
+  }
+  
+  .nav {
+	position: relative;
+	margin: 0 15%;
+	text-align: right;
+	top: 40%;
+	transform: translateY(-50%);
+	font-weight: bold;
+  }
+  
+  .nav ul {
+	list-style: none;
+  }
+	
+	li {
+	  position: relative;
+	  margin: 3.2em 0;
+	}
+	  
+	  a {
+		line-height: 5em;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0.4em;
+		color: rgba(#FFF, 0.35);
+		display: block;
+		transition: all ease-out 300ms;
+	  }
+	  
+	  .active a {
+		color: white;
+	  }
+	  
+	  :not(.active)::after {
+		opacity: 0.2;
+	  }
+	  
+	  :not(.active):hover a {
+		color: rgba(#FFF, 0.75);
+	  }
+	  
+	  ::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 0.2em;
+		
+		left: 0;
+		bottom: 0;
+		
+	  }
